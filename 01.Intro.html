@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #patrat {
+        width: 100px;
+        height: 100px;
+        padding: 10;
+        border: 1px solid black;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        /* position: relative;
+        margin: 10px; */
+      }
+      .numeCuloare {
+        /* position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px; */
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="main" onclick="schimba()">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum provident
+      amet eos quaerat, debitis unde libero doloribus repellendus dignissimos.
+      Unde, deserunt ex, dignissimos iure laborum perspiciatis vitae excepturi
+      eveniet itaque magnam illum porro laboriosam quos similique, maiores nam.
+    </p>
+
+    <p class="special">
+      Sapiente, iusto rem inventore quo sint sequi porro. Reiciendis itaque
+      eveniet quidem assumenda quisquam culpa sunt, veritatis eaque qui delectus
+      co reiciendis provident alias earum quae corporis? Autem voluptatum modi
+      vero ratione nihil perspiciatis sapiente animi corporis accusantium.
+    </p>
+    <form action="">
+      <select name="" id="furnizor" onchange="Afisare()">
+        <option value="Furnizor1">Furnizor1</option>
+        <option value="Furnizor2">Furnizor2</option>
+        <option value="Furnizor3">Furnizor3</option>
+      </select>
+      <button onclick="clickul()" id="butonulmeu">Apasa</button>
+      <input
+        type="text"
+        oncopy="copiere()"
+        oncut="taiere()"
+        onkeypress="apasare(event)"
+      />
+    </form>
+    <h1 id="var1">Selecteaza ceva</h1>
+    <h2 id="mesaj-counter">Placeholder pentru counter</h2>
+    <div id="container"></div>
+
+    <input type="text" id="adauga" />
+    <ol id="produse"></ol>
+    <p id="main" onclick="schimba2()">Apasa</p>
+    <div id="container"></div>
+    <button id="stergere" onclick="sterge()">Delete</button>
+    <button id="numaraProduse">Numara</button>
+    <img
+      id="omul"
+      src="https://images.unsplash.com/photo-1664575197229-3bbebc281874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      alt="om"
+      width="300px"
+    />
+    <h1 id="text">Alege culoarea</h1>
+    <section id="cutii"></section>
+
+    <input type="color" id="paletaCulori" />
+    <div id="paletaAleatorie"></div>
+
+    <script src="29.01.2024.js"></script>
+  </body>
+</html>
